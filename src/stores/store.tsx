@@ -16,6 +16,6 @@ export function StoreProvider({ children }: ChildrenProp) {
 	)
 }
 
-export const useStore = () => {
+export function useStore() {
 	return useContext(StoreContext)
 }

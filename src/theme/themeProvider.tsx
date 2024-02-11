@@ -4,7 +4,7 @@ import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import { ChildrenProp } from '@/types'
 import { themeOptions } from './themeOptions'
 
-export const MuiThemeProvider = ({ children }: ChildrenProp) => {
+export function MuiThemeProvider({ children }: ChildrenProp) {
 	const theme = createTheme(themeOptions)
 
 	return (
