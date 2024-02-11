@@ -2,16 +2,10 @@
 
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import { ChildrenProp } from '@/types'
-import { useStore } from '@/stores/store'
-import { darkTheme } from './darkTheme'
-import { lightTheme } from './lightTheme'
-import { observer } from 'mobx-react-lite'
+import { themeOptions } from './themeOptions'
 
-export const MuiThemeProvider = observer(({ children }: ChildrenProp) => {
-	const { themeStore } = useStore()
-	const theme = createTheme(
-		themeStore.paletteMode === 'dark' ? darkTheme : lightTheme
-	)
+export const MuiThemeProvider = ({ children }: ChildrenProp) => {
+	const theme = createTheme(themeOptions)
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -19,4 +13,4 @@ export const MuiThemeProvider = observer(({ children }: ChildrenProp) => {
 			{children}
 		</ThemeProvider>
 	)
-})
+}

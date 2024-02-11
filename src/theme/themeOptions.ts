@@ -1,8 +1,8 @@
 import { ThemeOptions } from '@mui/material'
-import { baseTheme } from './baseTheme'
+import { baseTheme } from './baseThemeOptions'
 import { deepmerge } from '@mui/utils'
 
-export const theme: ThemeOptions = {
+export const customTheme: ThemeOptions = {
 	palette: {
 		mode: 'dark',
 		primary: {
@@ -14,4 +14,4 @@ export const theme: ThemeOptions = {
 	},
 }
 
-export const darkTheme: ThemeOptions = deepmerge(baseTheme, theme)
+export const themeOptions: ThemeOptions = deepmerge(baseTheme, customTheme)
