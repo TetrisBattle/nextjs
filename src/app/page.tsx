@@ -1,14 +1,15 @@
 'use client'
 
-import { Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import { observer } from 'mobx-react-lite'
 
 function Home() {
 	return (
-		<div>
+		<Box>
 			Home
 			<Button>Button</Button>
-		</div>
+			<Button variant='text'>Button</Button>
+		</Box>
 	)
 }
 

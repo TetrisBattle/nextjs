@@ -5,6 +5,7 @@ export const baseTheme: ThemeOptions = {
 		toolbar: {}, // This will get rid of minHeight styles
 	},
 	typography: {
+		fontFamily: 'Inter, sans-serif',
 		h1: {
 			fontSize: '3rem', // 48px
 		},
@@ -23,6 +24,7 @@ export const baseTheme: ThemeOptions = {
 		button: {
 			fontSize: '1rem',
 			textTransform: 'none',
+			fontWeight: 600,
 		},
 	},
 	components: {
