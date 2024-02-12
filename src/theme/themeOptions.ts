@@ -1,6 +1,6 @@
 import { ThemeOptions } from '@mui/material'
-import { baseTheme } from './baseThemeOptions'
 import { deepmerge } from '@mui/utils'
+import { baseTheme } from './baseThemeOptions'
 
 export const customTheme: ThemeOptions = {
 	palette: {

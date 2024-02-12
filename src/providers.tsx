@@ -1,6 +1,6 @@
-import { MuiThemeProvider } from './theme/themeProvider'
-import { StoreProvider } from './stores/store'
 import { ChildrenProp } from './types'
+import { StoreProvider } from './stores/store'
+import { MuiThemeProvider } from './theme/themeProvider'
 
 export function Providers({ children }: ChildrenProp) {
 	return (

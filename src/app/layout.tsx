@@ -1,10 +1,10 @@
-import { Footer } from '@/components/footer'
-import { Header } from '@/components/header/header'
-import { Providers } from '@/providers'
-import { ChildrenProp } from '@/types'
-import { Box } from '@mui/material'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Box } from '@mui/material'
+import { ChildrenProp } from '@/types'
+import { Providers } from '@/providers'
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header/header'
 
 const inter = Inter({ subsets: ['latin'] })
 

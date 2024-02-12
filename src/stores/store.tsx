@@ -1,8 +1,8 @@
 'use client'
 
 import { createContext, useContext } from 'react'
-import { RootStore } from './rootStore'
 import { ChildrenProp } from '@/types'
+import { RootStore } from './rootStore'
 
 const rootStore = new RootStore()
 

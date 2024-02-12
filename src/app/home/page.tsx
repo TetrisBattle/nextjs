@@ -1,7 +1,7 @@
 'use client'
 
-import { Box, Typography } from '@mui/material'
 import { observer } from 'mobx-react-lite'
+import { Box, Typography } from '@mui/material'
 
 function Home() {
 	return (
