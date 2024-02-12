@@ -1,11 +1,11 @@
 'use client'
 
-import { Box, Button } from '@mui/material'
-import { HeaderRoutes } from './header'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Box, Button } from '@mui/material'
+import { HeaderRoutes } from './header'
 
-export const HeaderButtons = ({ routes }: { routes: HeaderRoutes }) => {
+export function HeaderButtons({ routes }: { routes: HeaderRoutes }) {
 	const pathName = usePathname()
 
 	return (

@@ -1,13 +1,13 @@
 'use client'
 
-import { Menu as MenuIcon } from '@mui/icons-material'
-import { Drawer, IconButton, MenuItem } from '@mui/material'
-import { useState } from 'react'
-import { HeaderRoutes } from './header'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
+import { Drawer, IconButton, MenuItem } from '@mui/material'
+import { Menu as MenuIcon } from '@mui/icons-material'
+import { HeaderRoutes } from './header'
 
-export const HeaderDrawer = ({ routes }: { routes: HeaderRoutes }) => {
+export function HeaderDrawer({ routes }: { routes: HeaderRoutes }) {
 	const [open, setOpen] = useState(false)
 	const pathName = usePathname()
 

@@ -1,14 +1,14 @@
-import { AppBar, Box, Toolbar, Typography } from '@mui/material'
-import { HeaderButtons } from './headerButtons'
-import { HeaderDrawer } from './headerDrawer'
 import Image from 'next/image'
+import { AppBar, Box, Toolbar, Typography } from '@mui/material'
+import { HeaderDrawer } from './headerDrawer'
+import { HeaderButtons } from './headerButtons'
 
 export type HeaderRoutes = {
 	route: string
 	label: string
 }[]
 
-export const Header = () => {
+export function Header() {
 	const headerRoutes: HeaderRoutes = [
 		{ route: '/home', label: 'Home' },
 		{ route: '/about', label: 'About' },
