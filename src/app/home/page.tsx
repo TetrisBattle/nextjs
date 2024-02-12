@@ -1,14 +1,14 @@
 'use client'
 
-import { Box, Button } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import { observer } from 'mobx-react-lite'
 
 function Home() {
 	return (
-		<Box>
-			Home
+		<Box sx={{ p: 2 }}>
+			<Typography variant='h1'>Home</Typography>
 			<Button>Button</Button>
-			<Button variant='text'>Button</Button>
+			<Button variant='contained'>Button</Button>
 		</Box>
 	)
 }

@@ -24,15 +24,9 @@ export const baseTheme: ThemeOptions = {
 		button: {
 			fontSize: '1rem',
 			textTransform: 'none',
-			fontWeight: 600,
 		},
 	},
 	components: {
-		MuiButton: {
-			defaultProps: {
-				variant: 'contained',
-			},
-		},
 		MuiTextField: {
 			defaultProps: {
 				autoComplete: 'off',

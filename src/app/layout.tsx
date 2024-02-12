@@ -1,3 +1,4 @@
+import { Header } from '@/components/header/header'
 import { Providers } from '@/providers'
 import { ChildrenProp } from '@/types'
 import type { Metadata } from 'next'
@@ -14,7 +15,10 @@ export default function RootLayout({ children }: Readonly<ChildrenProp>) {
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<Providers>{children}</Providers>
+				<Providers>
+					<Header />
+					{children}
+				</Providers>
 			</body>
 		</html>
 	)
